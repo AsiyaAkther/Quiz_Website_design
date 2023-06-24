@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- include all css files -->
+    <link rel="stylesheet" href="css/all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Quiz Website</title>
+  </head>
+  <body>
+    <!-- =========== Header start here =========== -->
+    <header class="header">
+        <div class="container">
+            <!-- menubar start here -->
+            <div class="menubar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Mobile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Electricity</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Quiz</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Bonus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                            </ul>
+                            <div class="header_buttons">
+                                <a href="#" class="btn login_btn">log in</a>
+                                <a href="#" class="btn signup_btn">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- menubar end here -->
+        </div>
+
+        <!-- hero section start here -->
+        <div class="hero">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <!-- cowndown clock code start here -->
+                    <div class="timer_div">
+                        <div class="timer_label">
+                            <div class="timer_clock">
+                                <img src="images/timer_clock.png" alt="">
+                            </div>
+                            <div class="label_text">
+                                <p>Quiz</p>
+                                <p>Time start</p>
+                            </div>
+                        </div>
+                        <div class="cowndown_div">
+                            <table>
+                                <tr>
+                                    <td id="hrs">00</td>
+                                    <td id="min">00</td>
+                                    <td id="sec">00</td>
+                                </tr>
+                                <tr>
+                                    <td>HRS</td>
+                                    <td>MIN</td>
+                                    <td>SEC</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- cowndown clock code start here -->
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <!-- quiz section code start here -->
+                    <div class="quiz_section">
+                        <div class="quiz-area">
+                            <form id="quizForm" action="/">
+                                <!-- Circles which indicates the steps of the form: -->
+                                <h3>Take our Quiz and get answers</h3>
+                                <div class="from-dots" style="text-align:center;margin-top:20px;">
+                                  <span class="step step_one"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step step_five"></span>
+                                </div>
+                                <!-- One "tab" for each step in the form: -->
+                                <div class="tab">
+                                    <div class="questions_tab">
+                                        <div class="que_num"><span>1</span></div>
+                                        <div class="quiz_options_area">
+                                            <h2>How much do you pay per year for the private electricity contract?</h2>
+                                            <div class="que_options">
+                                                <input type="radio" id="q1-op1" name="options">
+                                                <label for="q1-op1" class="radio-custom-label one">SKE 10000</label>
+
+                                                <input type="radio" id="q1-op2" name="options">
+                                                <label for="q1-op2" class="radio-custom-label two">SKE 3000</label>
+
+                                                <input type="radio" id="q1-op3" name="options">
+                                                <label for="q1-op3" class="radio-custom-label">SKE 1000</label>
+
+                                                <input type="radio" id="q1-op4" name="options">
+                                                <label for="q1-op4" class="radio-custom-label">SKE 5000</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <div class="questions_tab">
+                                        <div class="que_num"><span>2</span></div>
+                                        <div class="quiz_options_area">
+                                            <h2>How many partners are you?</h2>
+                                            <div class="que_options">
+                                                <input type="radio" id="q2-op1" name="options">
+                                                <label for="q2-op1" class="radio-custom-label one">1</label>
+
+                                                <input type="radio" id="q2-op2" name="options">
+                                                <label for="q2-op2" class="radio-custom-label two">2</label>
+
+                                                <input type="radio" id="q2-op3" name="options">
+                                                <label for="q2-op3" class="radio-custom-label">3</label>
+
+                                                <input type="radio" id="q2-op4" name="options">
+                                                <label for="q2-op4" class="radio-custom-label">4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <div class="questions_tab">
+                                        <div class="que_num"><span>3</span></div>
+                                        <div class="quiz_options_area">
+                                            <h2>Are you self-employed?</h2>
+                                            <div class="que_options">
+                                                <input type="radio" id="q3-op1" name="options">
+                                                <label for="q3-op1" class="radio-custom-label one">Yes</label>
+
+                                                <input type="radio" id="q3-op2" name="options">
+                                                <label for="q3-op2" class="radio-custom-label two">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <div class="questions_tab">
+                                        <div class="que_num"><span>4</span></div>
+                                        <div class="quiz_options_area">
+                                            <h2>How many employees do you have at the company?</h2>
+                                            <div class="que_options">
+                                                <input type="radio" id="q4-op1" name="options">
+                                                <label for="q4-op1" class="radio-custom-label one">5</label>
+
+                                                <input type="radio" id="q4-op2" name="options">
+                                                <label for="q4-op2" class="radio-custom-label two">6</label>
+
+                                                <input type="radio" id="q4-op3" name="options">
+                                                <label for="q4-op3" class="radio-custom-label">7</label>
+
+                                                <input type="radio" id="q4-op4" name="options">
+                                                <label for="q4-op4" class="radio-custom-label">8</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <div class="questions_tab">
+                                        <div class="que_num"><span>5</span></div>
+                                        <div class="quiz_options_area">
+                                            <h2>Would you consider changing your electricity contract if you received a SEK 44,4440 discount every year? 63,000</h2>
+                                            <div class="que_options">
+                                                <input type="radio" id="q5-op1" name="options">
+                                                <label for="q5-op1" class="radio-custom-label one">Yes</label>
+
+                                                <input type="radio" id="q5-op2" name="options">
+                                                <label for="q5-op2" class="radio-custom-label two">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="indicator_btns" style="overflow:auto;">
+                                    <div style="float:left;">
+                                          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Last Question</button>
+                                          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next Question</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- quiz section code start here -->
+                </div>
+            </div>
+        </div>
+        <!-- hero section start here -->
+    </header>
+    <!-- =========== Header end here =========== -->
+
+    <!-- =========== Main start here =========== -->
+    <main class="main">
+        <!-- form section codes start here -->
+        <section class="form_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <form action="#">
+                            <div class="name_phn">
+                                <input type="text" placeholder="Your Name">
+                                <input type="tel" placeholder="Your Mobile">
+                            </div>
+                            <input type="email" placeholder="Enter your email">
+                            <a href="#" class="btn send_btn">Send</a>
+                        </form>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="thanks_section">
+                            <h3>Thanks for your answers!</h3>
+                            <p>The result shows that through katshing and our bonus program you can make big savings on any electricity contract. For more information about katshing and how we can guarantee you reduced electricity costs for at least 12 months, fill in your contact details here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- form section codes start here -->
+
+        <div class="container">
+
+            <!-- ask now section start -->
+            <section class="ask_now">
+                <div class="icon">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <input type="text" placeholder="Ask a question and you will be sure to find an answer" required="">
+                <button type="submit" value="Ask Now" class="ask_now_btn">Ask Now</button>
+            </section>
+            <!-- ask now section start -->
+
+            <section class="main_contents">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                        <!-- question section start here -->
+                        <div class="question_section">
+
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="recent_que_tab" data-bs-toggle="tab" data-bs-target="#recent-que-pane" type="button" role="tab" aria-controls="recent-que-pane" aria-selected="true">Recent Questions</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="answer-tab" data-bs-toggle="tab" data-bs-target="#answer-tab-pane" type="button" role="tab" aria-controls="answer-tab-pane" aria-selected="false">Answer</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="no-ans-tab" data-bs-toggle="tab" data-bs-target="#no-ans-tab-pane" type="button" role="tab" aria-controls="no-ans-tab-pane" aria-selected="false">No Answer</button>
+                                </li>
+
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="most-visit-tab" data-bs-toggle="tab" data-bs-target="#most-visit-tab-pane" type="button" role="tab" aria-controls="most-visit-tab-pane" aria-selected="false">Most Visited</button>
+                                  </li>
+
+                                  <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="most-vote-tab" data-bs-toggle="tab" data-bs-target="#most-vote-tab-pane" type="button" role="tab" aria-controls="most-vote-tab-pane" aria-selected="false">Most Voted</button>
+                                  </li>
+                              </ul>
+
+                              <div class="tab-content" id="myTabContent">
+
+                                <div class="tab-pane fade show active" id="recent-que-pane" role="tabpanel" aria-labelledby="recent_que_tab" tabindex="0">
+                                    <!-- tab cards one -->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_1.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>Would you consider changing your electricity contract if you received a SEK 44,400 discount every year?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="in_progress"><i class="fa-solid fa-check"></i> in progress</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards two-->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_2.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="solved"><i class="fa-solid fa-check"></i> solved</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards three-->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_3.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="in_progress"><i class="fa-solid fa-check"></i> in progress</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards four -->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_4.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="closed"><i class="fa-solid fa-lock"></i> Closed</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="answer-tab-pane" role="tabpanel" aria-labelledby="answer-tab" tabindex="0">
+                                     <!-- tab cards four -->
+                                     <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_4.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="closed"><i class="fa-solid fa-lock"></i> Closed</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards three-->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_3.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="in_progress"><i class="fa-solid fa-check"></i> in progress</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards two-->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_2.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="solved"><i class="fa-solid fa-check"></i> solved</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards one -->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_1.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>Would you consider changing your electricity contract if you received a SEK 44,400 discount every year?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="in_progress"><i class="fa-solid fa-check"></i> in progress</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="no-ans-tab-pane" role="tabpanel" aria-labelledby="no-ans-tab" tabindex="0">
+                                    <!-- tab cards two-->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_2.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="solved"><i class="fa-solid fa-check"></i> solved</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards one -->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_1.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>Would you consider changing your electricity contract if you received a SEK 44,400 discount every year?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="in_progress"><i class="fa-solid fa-check"></i> in progress</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards three-->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_3.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="in_progress"><i class="fa-solid fa-check"></i> in progress</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <!-- tab cards four -->
+                                     <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_4.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="closed"><i class="fa-solid fa-lock"></i> Closed</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="most-visit-tab-pane" role="tabpanel" aria-labelledby="most-visit-tab" tabindex="0">
+                                    <!-- tab cards three-->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_3.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="in_progress"><i class="fa-solid fa-check"></i> in progress</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards two-->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_2.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="solved"><i class="fa-solid fa-check"></i> solved</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="most-vote-tab-pane" role="tabpanel" aria-labelledby="most-vote-tab" tabindex="0">
+                                     <!-- tab cards four -->
+                                     <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_4.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>How to approach applying for a job at a company owned by a friend?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="closed"><i class="fa-solid fa-lock"></i> Closed</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- tab cards one -->
+                                    <div class="question_cards">
+                                        <div class="card_img">
+                                            <img src="images/card_img_1.png" alt="">
+                                        </div>
+                                        <div class="card_contents">
+                                            <div class="card_heading_contents">
+                                                <div class="card_head">
+                                                    <h3>Would you consider changing your electricity contract if you received a SEK 44,400 discount every year?</h3>
+                                                    <div class="card_heading_btns">
+                                                        <a href="#" class="btn que_btn">questions</a>
+                                                        <a href="#" class="btn report_btn">Report</a>
+                                                    </div>
+                                                </div>
+                                                <p>(Why I darest say, they darest not get offended when they so indeed have examples that violate their own use and nomenclature!) IE: pudding as a specific dessert, puddings as a general term for desserts. Calling something a Yorkshire pudding ..</p>
+                                            </div>
+                                            <div class="card_bottom_contents">
+                                                <ul>
+                                                    <li class="in_progress"><i class="fa-solid fa-check"></i> in progress</li>
+                                                    <li class="star"><i class="fa-solid fa-star"></i> 5 Star</li>
+                                                    <li><i class="fa-solid fa-comments"></i> 5 Answer</li>
+                                                    <li><img src="images/language_icon.png" alt=""> Language</li>
+                                                    <li><i class="fa-solid fa-eye"></i> 12000 views</li>
+                                                </ul>
+                                                <a href="#" class="btn exp_btn">Explainer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                              </div>
+                        </div>
+                        <!-- question section end here -->
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="sidebar">
+                            <a href="#" class="ask_a_que">Ask A Questions</a>
+
+                            <!-- star card code start here -->
+                            <div class="sidebar_card star">
+                                <div class="sidebar_card_heading">
+                                    <h3>Star</h3>
+                                </div>
+                                <ul class="star_list">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-file-circle-question"></i>
+                                        </div>
+                                        <div class="star_option">
+                                            <a href="#">Questions ( 19 )</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-comments"></i>
+                                        </div>
+                                        <div class="star_option">
+                                            <a href="#">Answers ( 44 )</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-comments"></i>
+                                        </div>
+                                        <div class="star_option">
+                                            <a href="#">Best Answers ( 4 )</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="star_option">
+                                            <a href="#">Users ( 65 )</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- star card code end here -->
+
+                            <!-- find us card code start here -->
+                            <div class="sidebar_card find_us">
+                                <div class="sidebar_card_heading">
+                                    <h3>Find Us</h3>
+                                </div>
+                                <ul class="social_link_list">
+                                    <li class="subscribe">
+                                        <a href="#">
+                                            <div class="find_us_option">
+                                                <p>Subscribe To</p>
+                                                <p>RSS Feed</p>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="images/wifi.png" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <div class="find_us_option">
+                                                <p>0</p>
+                                                <p>Fans</p>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="images/facebook.png" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <div class="find_us_option">
+                                                <p>0</p>
+                                                <p>Follwers</p>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="images/twittwer.png" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="#">
+                                            <div class="find_us_option">
+                                                <p>495</p>
+                                                <p>Subscribe</p>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="images/youtube.png" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- find us card code end here -->
+
+                            <!-- login card code start here -->
+                            <div class="sidebar_card login">
+                                <div class="sidebar_card_heading">
+                                    <h3>Login</h3>
+                                </div>
+                                <form action="#" class="login_form">
+                                    <input type="text" class="form-control place_icon" placeholder="&#xf007;   Username">
+                                    <input type="password" class="form-control place_icon" placeholder="&#xf023;   Password">
+                                    <div class="options">
+                                        <a href="#">Register</a>
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="remember_me">
+                                            <label for="remember_me">Remember Me</label>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn login_btn">log in</a>
+                                </form>
+                            </div>
+                            <!-- login card code end here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- =========== Main end here =========== -->
+    <!-- =========== Footer start here =========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_contents">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="footer_one">
+                            <img src="images/logo.png" alt="">
+                            <p>increase ads revenue for your mobile games in a privacy compliant way achieving 100% of visibility on your audiences.</p>
+                            <div class="social_links">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-play"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <div class="footer_two">
+                            <h4>Our Services</h4>
+                            <ul class="footer_list">
+                                <li><i class="fa-solid fa-check"></i><a href="#">Mobile</a></li>
+                                <li><i class="fa-solid fa-check"></i><a href="#">subscription</a></li>
+                                <li><i class="fa-solid fa-check"></i><a href="#">Electricity</a></li>
+                                <li><i class="fa-solid fa-check"></i><a href="#">contract</a></li>
+                                <li><i class="fa-solid fa-check"></i><a href="#">Collect points</a></li>
+                                <li><i class="fa-solid fa-check"></i><a href="#">Business</a></li>
+                                <li><i class="fa-solid fa-check"></i><a href="#">Shopping cart</a></li>
+                                <li><i class="fa-solid fa-check"></i><a href="#">International</a></li>
+                                <li><i class="fa-solid fa-check"></i><a href="#">prices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-2">
+                        <div class="footer_three">
+                            <h4>Important Link</h4>
+                            <ul class="footer_list">
+                                <li><a href="#"><i class="fa-solid fa-check"></i> About Us</a></li>
+                                <li><a href="#"><i class="fa-solid fa-check"></i> How to work</a></li>
+                                <li><a href="#"><i class="fa-solid fa-check"></i> Privacy Policy</a></li>
+                                <li><a href="#"><i class="fa-solid fa-check"></i> Our Media</a></li>
+                                <li><a href="#"><i class="fa-solid fa-check"></i> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="footer_four">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i><a href="#">113 katshing, White House, New Jercy, Sweden</a></li>
+                                <li><i class="fa-solid fa-phone-volume"></i><a href="#">+001-548-159-2491</a></li>
+                                <li><i class="fa-solid fa-envelope"></i><a href="#">info@yourdomain.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =========== Footer end here =========== -->
+
+
+    <!-- include all js files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,419 @@
+/* small laptop */
+@media only screen and (min-width: 1201px) and (max-width: 1600px){
+    .hero .timer_div {
+        left: 50px;
+    }
+    .question_cards .card_img {
+        width: 84px;
+    }
+    .question_cards .card_img img {
+        width: 80px;
+    }
+    .question_cards .card_contents .card_heading_contents .card_head h3 {
+        font-size: 14px;
+        width: 395px;
+    }
+}
+
+/*		Ipad Layout: 768px	 */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .hero .timer_div {
+        left: 30px;
+        bottom: 80px;
+    }
+    .hero .timer_div .timer_label .timer_clock img {
+        width: 30px;
+        margin-right: 5px;
+    }
+    .hero .timer_div .timer_label .label_text p {
+        font-size: 12px;
+    }
+    .questions_tab .quiz_options_area h2 {
+        font-size: 24px;
+        width: 450px;
+    }
+    .hero .timer_div .cowndown_div table tr td {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    .hero .timer_div .timer_label {
+        padding: 30px 0 30px 10px;
+        margin-right: 10px;
+    }
+    .quiz-area {
+        padding: 30px;
+    }
+    .quiz_section {
+        width: 550px;
+        height: 666px;
+        margin-top: 42px;
+    }
+    #quizForm .indicator_btns {
+        position: absolute;
+        bottom: -8px;
+        left: -80px;
+    }
+    .form_section .thanks_section h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+    .question_section ul .nav-item .nav-link {
+        border-radius: 0;
+        font-size: 12px;
+        padding: 20px 20px;
+        color: #223137;
+    }
+    .question_cards {
+        flex-direction: column;
+    }
+    .question_cards .card_img img {
+        width: 200px;
+    }
+    .question_cards .card_img {
+        margin-right: 20px;
+        border: 2px solid #022451;
+        width: 204px;
+        height: fit-content;
+        border-radius: 50%;
+    }
+    .question_cards .card_contents .card_heading_contents .card_head {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+/*		Tablet Layout: 768px	 */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    /* hero section code start here */
+    .hero{
+        background-size: auto;
+        height: 580px;
+    }
+    .hero .timer_div{
+        width: 500px;
+        margin: 0 auto;
+        left: 100px;
+        bottom: 420px;
+    }
+    /* timer clock section start */
+
+    /* quiz section start */
+    .quiz_section{
+        background-color: #223137;
+        width: 600px;
+        height: 600px;
+        float: right;
+        position: relative;
+        margin-top: 180px;
+    }
+    .quiz-area{
+        padding: 30px;
+        border-radius: 0px 15px 15px 0px;
+    }
+    #quizForm h3{
+        font-size: 24px;
+    }
+    .questions_tab{
+        padding: 30px 30px 50px;
+        width: 700px;
+        height: 370px;
+    }
+    .questions_tab .quiz_options_area h2{
+        font-size: 18px;
+        color: #223137;
+        font-weight: bold;
+        width: 530;
+    }
+    .questions_tab .quiz_options_area .que_options{
+        height: 200px;
+    }
+    .questions_tab .quiz_options_area .que_options .radio-custom-label{
+        width: 48%;
+        background: #F4F4F4;
+        padding: 30px 0;
+        text-align: center;
+        font-size: 18px;
+        color: #223137;
+        font-weight: 700;
+    }
+
+    #quizForm .indicator_btns{
+        position: absolute;
+        bottom: 50px;
+        left: -80px;
+    }
+    #quizForm .indicator_btns button:hover {
+        opacity: 0.8;
+    }
+    .form_section{
+        padding: 30px 0;
+        margin-top: 195px;
+    }
+    .question_section ul .nav-item .nav-link {
+        padding: 15px 20px;
+    }
+    .question_cards {
+        flex-direction: column;
+    }
+    .question_cards .card_img img {
+        width: 200px;
+    }
+    .question_cards .card_img {
+        width: 204px;
+    }
+}
+
+/*		Mobile Layout: 320px		 */
+@media only screen and (max-width: 767px){
+    body{
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    /* menubar code start */
+    .menubar .navbar .nav-item .nav-link{
+        width: fit-content;
+    }
+
+    /* hero section code start here */
+    .hero{
+        background-size: auto;
+        height: 629px;
+        width: 100%;
+    }
+
+    /* timer clock section start */
+    .hero .timer_div{
+        width: 100%;
+        left: 0;
+        bottom: 479px;
+    }
+    .hero .timer_div .timer_label{
+        padding: 30px 0 30px 15px;
+        margin-right: 10px;
+    }
+    .hero .timer_div .timer_label .timer_clock img{
+        width: 30px;
+        margin-right: 5px;
+    }
+    .hero .timer_div .timer_label .label_text p{
+        font-size: 12px;
+    }
+    .hero .timer_div .cowndown_div{
+        padding: 17px 10px;
+    }
+    .hero .timer_div .cowndown_div table tr td{
+        font-size: 12px;
+    }
+
+    /* quiz section start */
+    .quiz_section{
+        height: 467px;
+        margin-top: 170px;
+        width: 100%;
+    }
+    .quiz-area{
+        padding: 20px;
+        border-radius: 0px 15px 15px 0px;
+    }
+    #quizForm h3{
+        font-size: 18px;
+    }
+    .tab{
+        right: 0;
+        left: 0;
+        height: 310px;
+    }
+    .questions_tab{
+        height: 310px;
+        padding: 25px 14px 40px;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .questions_tab .que_num{
+        width: 30px;
+        height: 30px;
+    }
+    .questions_tab .que_num span{
+        font-size: 16px;
+    }
+    .questions_tab .quiz_options_area h2{
+        font-size: 15px;
+        width: 242px;
+    }
+    .questions_tab .quiz_options_area .que_options{
+        width: 100%;
+        height: 175px;
+    }
+    .questions_tab .quiz_options_area .que_options .radio-custom-label{
+        padding: 25px 0;
+        font-size: 12px;
+    }
+    #quizForm .indicator_btns{
+        position: absolute;
+        bottom: 14px;
+        left: 30px;
+    }
+    #quizForm #nextBtn {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+    #quizForm #prevBtn {
+        padding: 10px 25px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    #quizForm .indicator_btns button:hover {
+        opacity: 1;
+    }
+    /* ============== header Section code end here ============= */
+
+    /* ============== main Section code strat here ============= */
+
+    /* form section code start here */
+    .form_section{
+        padding: 50px 0 0 0;
+    }
+    .form_section form{
+        height: auto;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form_section .thanks_section{
+        height: 290px;
+        padding: 30px 15px;
+    }
+    .form_section .thanks_section h3{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .form_section .thanks_section p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    /* form section code end here */
+
+    /* ask now div code start here */
+    .ask_now{
+        margin: 30px 0;
+        width: 100%;
+    }
+    .ask_now .icon{
+        padding: 10px 10px;
+    }
+    .ask_now .icon i{
+        font-size: 12px;
+    }
+    .ask_now input{
+        padding: 0 10px;
+        width: 75%;
+    }
+    .ask_now input::placeholder{
+        font-size: 10px;
+    }
+    .ask_now .ask_now_btn{
+        width: 20%;
+        font-size: 10px;
+    }
+    /* ask now div code start here */
+
+    .main .main_contents{
+        padding-bottom: 100px;
+    }
+    /* question section code start here */
+    .question_section ul .nav-item{
+        width: 20%;
+    }
+    .question_section ul .nav-item .nav-link{
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+
+    .question_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 30px;
+        background-color: #ffffff;
+        box-shadow: 0px 6px 35px 0px #0224511F;
+        padding: 20px 10px;
+    }
+    .question_cards .card_img{
+        width: 104px;
+    }
+    .question_cards .card_img img{
+        width: 100px;
+    }
+    .question_cards .card_contents .card_heading_contents{
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+    .question_cards .card_contents .card_heading_contents .card_head{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .question_cards .card_contents .card_heading_contents .card_head h3{
+        font-size: 13px;
+        line-height: 22px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .question_cards .card_contents .card_bottom_contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .question_section ul {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .question_cards .card_contents .card_bottom_contents ul li i{
+        font-size: 10px;
+        color: #000000;
+    }
+    .question_cards .card_contents .card_bottom_contents ul li{
+        font-size: 14px;
+    }
+
+    /* ============== Main section code end here ============= */
+
+    /* ============== Footer code strat here ============= */
+    .footer{
+        padding: 50px 0;
+    }
+    .footer .footer_two, .footer .footer_three{
+        margin: 20px 0;
+    }
+}
+/*		Wide Mobile Layout: 480px	 */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .questions_tab{
+        width: 450px;
+    }
+    #quizForm .indicator_btns{
+        left: 100px;
+    }
+}
+
+@media only screen and (min-width: 401) and (max-width: 479){
+    .questions_tab{
+        width: 390px;
+    }
+    #quizForm .indicator_btns{
+        left: 100px;
+    }
+}
+@media only screen and (min-width: 350) and (max-width: 400){
+    #quizForm .indicator_btns{
+        left: 70px;
+    }
+}

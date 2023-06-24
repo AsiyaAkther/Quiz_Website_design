@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ============== common codes strat here ============= */
+body{
+    background-color: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/* ============== common codes end here ============= */
+
+/* ============== header Section code strat here ============= */
+.header{
+    font-family: 'Open Sans', sans-serif;
+}
+/* menubar code start */
+.menubar .navbar{
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+.menubar .navbar .nav-item .nav-link{
+    font-size: 14px;
+    font-weight: 500;
+    color: #223137;
+    margin-right: 20px;
+    padding: 2px 0;
+    transition: 1s;
+}
+.menubar .navbar .nav-item .nav-link.active{
+    border-bottom: 2px solid #FFCB00;
+}
+.menubar .navbar .nav-item .nav-link:hover{
+    border-bottom: 2px solid #FFCB00;
+    transition: 1s;
+}
+.menubar .header_buttons .login_btn{
+    background-color: transparent;
+    border: 1px solid #223137;
+    color: #223137;
+    font-size: 15px;
+    padding: 8px 25px;
+    border-radius: 50px;
+    margin-right: 20px;
+    transition: 1s;
+}
+.menubar .header_buttons .login_btn:hover{
+    background-color: #223137;
+    border: 1px solid #223137;
+    color: #FFCB00;
+    transition: 1s;
+}
+.menubar .header_buttons .signup_btn{
+    background-color: #FFCB00;
+    border: 1px solid #FFCB00;
+    color: #223137;
+    font-size: 15px;
+    padding: 8px 25px;
+    border-radius: 50px;
+    transition: 1s;
+}
+.menubar .header_buttons .signup_btn:hover{
+    background-color: transparent;
+    border: 1px solid #223137;
+    color: #223137;
+    transition: 1s;
+}
+/* menubar code end */
+
+/* hero section code start here */
+.hero{
+    background-image: url('../images/hero_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 750px;
+    position: relative;
+}
+
+/* timer clock section start */
+.hero .timer_div{
+    background: linear-gradient(104.94deg, #223137 20.99%, #FFCB00 116.6%);
+    border-radius: 100px;
+}
+.hero .timer_div{
+    position: absolute;
+    left: 100px;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .timer_div .timer_label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0 40px 20px;
+    margin-right: 30px;
+}
+.hero .timer_div .timer_label .timer_clock img{
+    width: 50px;
+    margin-right: 10px;
+}
+.hero .timer_div .timer_label .label_text p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.hero .timer_div .cowndown_div{
+    background-color: #ffffff;
+    padding: 20px 10px;
+    border-radius: 100px;
+}
+.hero .timer_div .cowndown_div table{
+    text-align: center;
+}
+.hero .timer_div .cowndown_div table tr td{
+    border-right: 3px solid #AAAAAA;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #223137;
+}
+.hero .timer_div .cowndown_div table tr td:last-child{
+    border-right: none;
+}
+/* timer clock section end */
+
+/* quiz section start */
+.quiz_section{
+    background-color: #223137;
+    width: 600px;
+    height: 750px;
+    float: right;
+    position: relative;
+}
+.quiz-area{
+	padding: 50px;
+	border-radius: 0px 15px 15px 0px;
+}
+.from-dots{
+	margin: 30px 0px 50px 0px;
+}
+.tab {
+    display: none;
+}
+#quizForm h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFCB00;
+}
+.tab{
+    position: absolute;
+    right: 30px;
+    height: 500px;
+}
+.questions_tab{
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 53px 0px rgba(255, 245, 0, 0.59);
+    border-radius: 25px;
+    padding: 30px 40px 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.questions_tab .que_num{
+    width: 70px;
+    height: 70px;
+    background-color: #223137;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.questions_tab .que_num span{
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFCB00;
+}
+.questions_tab .quiz_options_area h2{
+    font-size: 30px;
+    color: #223137;
+    font-weight: bold;
+    width: 600px;
+}
+.questions_tab .quiz_options_area .que_options{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 320px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.questions_tab .quiz_options_area .que_options .radio-custom-label{
+    width: 48%;
+    background: #F4F4F4;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 24px;
+    color: #223137;
+    font-weight: 700;
+}
+.questions_tab .quiz_options_area .que_options input[type="radio"]{
+    display: none;
+}
+.radio-custom-label.one, .radio-custom-label.two{
+    margin-bottom: 20px;
+}
+.questions_tab .quiz_options_area .que_options input[type="radio"]:checked + label{
+    background-color: #223137;
+    color:#FFCB00;
+}
+
+#quizForm .indicator_btns{
+    position: absolute;
+    bottom: 50px;
+    left: -80px;
+}
+#quizForm #nextBtn {
+  background-color: #FFCB00;
+  color: #223137;
+  border: none;
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#quizForm #prevBtn {
+    background-color: #ffffff;
+    color: #223137;
+    border: none;
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+#quizForm .indicator_btns button:hover {
+  opacity: 0.8;
+}
+
+/* Make circles that indicate the steps of the form: */
+.from-dots{
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 15px;
+}
+.step {
+  height: 15px;
+  width: 20%;
+  background-color: #ffffff;
+  border: none;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step_one{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.step_five{
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.step.active {
+  opacity: .6;
+  background: #FFCB00;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #FFCB00;
+  opacity: 1;
+}
+
+/* quiz section end */
+/* hero section code end here */
+/* ============== header Section code end here ============= */
+
+/* ============== main Section code strat here ============= */
+.main{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* form section code start here */
+.form_section{
+    background-image: url('../images/form_section_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+.form_section form{
+    height: 350px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form_section form input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 20px 25px;
+    width: 100%;
+    background-color: #FFCB00;
+}
+.form_section form input::placeholder{
+    color: #22313787;
+}
+.form_section form .name_phn{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.form_section form .name_phn input{
+    width: 49%;
+}
+.form_section form .btn.send_btn{
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    align-self: flex-start;
+    background-color: #223137;
+    border: 1px solid #223137;
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+}
+.form_section form .btn.send_btn:hover{
+    background-color: transparent;
+    border: 1px solid #223137;
+    color: #223137;
+    transition: 0.5s;
+}
+.form_section .thanks_section{
+    background-image: url('../images/thanks_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    padding: 40px 60px;
+    text-align: center;
+}
+.form_section .thanks_section h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.form_section .thanks_section p{
+    font-size: 16px;
+    line-height: 28px;
+}
+/* form section code end here */
+
+/* ask now div code start here */
+.ask_now{
+    margin: 80px 0;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 32px 0px #0224512E;
+    display: flex;
+    justify-content: flex-start;
+}
+.ask_now .icon{
+    padding: 20px 25px;
+    background-color: #FFCB00;
+}
+.ask_now .icon i{
+    color: #ffffff;
+    font-size: 24px;
+}
+.ask_now input{
+    border: none;
+    outline: none;
+    width: 82%;
+    padding: 0 20px;
+}
+.ask_now input::placeholder{
+    color: #223137;
+    font-size: 14px;
+}
+.ask_now .ask_now_btn{
+    width: 13%;
+    border: none;
+    background-color: #FFCB00;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* ask now div code start here */
+
+.main .main_contents{
+    padding-bottom: 100px;
+}
+/* question section code start here */
+.question_section ul{
+    display: flex;
+    justify-content: space-between;
+}
+.question_section .nav-tabs{
+    border-bottom: 1px solid #223137;
+}
+.question_section ul .nav-item .nav-link{
+    border-radius: 0;
+    font-size: 14px;
+    padding: 20px 30px;
+    color: #223137;
+}
+.question_section ul .nav-item .nav-link:hover{
+    border: none;
+}
+.question_section ul .nav-item .nav-link.active{
+    background-color: #223137;
+    color: #ffffff;
+    border: 1px solid #223137;
+}
+
+.question_cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 35px 0px #0224511F;
+    padding: 20px 10px;
+}
+.question_cards .card_img{
+    margin-right: 20px;
+    border: 2px solid #022451;
+    width: 350px;
+    height: fit-content;
+    border-radius: 50%;
+}
+.question_cards .card_img img{
+    width: 100%;
+}
+.question_cards .card_contents .card_heading_contents{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #AAAAAA;
+    padding: 30px 0;
+}
+.question_cards .card_contents .card_heading_contents .card_head{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.question_cards .card_contents .card_heading_contents .card_head h3{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    width: 450px;
+    color: #022451;
+    margin-right: 15px;
+}
+.question_cards .card_contents .card_heading_contents .card_head .que_btn{
+    background-color: #022451;
+    border: 1px solid #022451;
+    border-radius: 0;
+    color: #FFF500;
+    margin-right: 8px;
+}
+.question_cards .card_contents .card_heading_contents .card_head .report_btn{
+    background-color: #EAEAEA;
+    border: 1px solid #EAEAEA;
+    border-radius: 0;
+    color: #000000;
+}
+.question_cards .card_contents .card_heading_contents p{
+    font-size: 14px;
+    color: #292F36;
+    line-height: 25px;
+}
+.question_cards .card_contents .card_bottom_contents{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.question_cards .card_contents .card_bottom_contents ul li{
+    list-style-type: none;
+    margin-right: 10px;
+    color: #292F36;
+}
+.question_cards .card_contents .card_bottom_contents ul li i{
+    font-size: 14px;
+    color: #000000;
+}
+.question_cards .card_contents .card_bottom_contents ul li.in_progress,
+.question_cards .card_contents .card_bottom_contents ul li.in_progress i{
+    color: #FC5B3A;
+}
+.question_cards .card_contents .card_bottom_contents ul li.star,
+.question_cards .card_contents .card_bottom_contents ul li.star i{
+    color: #FF8A00;
+}
+.question_cards .card_contents .card_bottom_contents .exp_btn{
+    background-color: #022451;
+    color: #FFF500;
+    border-radius: 0;
+    padding: 8px 20px;
+    transition: 0.5s;
+}
+.question_cards .card_contents .card_bottom_contents .exp_btn:hover{
+    background-color: #FFCB00;
+    color: #292F36;
+    transition: 0.5s;
+}
+.question_cards .card_contents .card_bottom_contents ul li.solved,
+.question_cards .card_contents .card_bottom_contents ul li.solved i{
+    color: #6CFC3A;
+}
+.question_cards .card_contents .card_bottom_contents ul li.closed,
+.question_cards .card_contents .card_bottom_contents ul li.closed i{
+    color: #022451;
+}
+/* question section code end here */
+
+/* sidebar section code start here */
+.main_contents .sidebar .ask_a_que{
+    background-color: #223137;
+    padding: 8px 0;
+    color: #FFCB00;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.sidebar_card{
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 37px 0px #0224511F;
+    margin-top: 50px;
+    padding: 40px 30px;
+}
+.sidebar_card_heading{
+    border-bottom: 1px solid #223137;
+    padding-left: 10px;
+}
+.sidebar_card_heading h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FC5B3A;
+}
+.star .star_list{
+    margin-top: 35px;
+}
+.star .star_list li{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: #F4F4F4;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+.star .star_list li:last-child{
+    margin-bottom: 0;
+}
+.star .star_list li .icon{
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #022451;
+}
+.star .star_list li .icon i{
+    color: #FFCB00;
+    font-size: 14px;
+}
+.star .star_list li .star_option a{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar_card.find_us{
+    margin-top: 30px;
+}
+.find_us .social_link_list{
+    margin-top: 40px;
+}
+.find_us .social_link_list li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding: 8px 0;
+}
+.find_us .social_link_list li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.find_us .social_link_list li a p{
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.find_us .social_link_list li:last-child{
+    margin-bottom: 0;
+}
+.find_us .social_link_list li.subscribe{
+    background-color: #F8A03A;
+}
+.find_us .social_link_list li.facebook{
+    background-color: #4A7FE4;
+}
+.find_us .social_link_list li.twitter{
+    background-color: #06CDE8;
+}
+.find_us .social_link_list li.youtube{
+    background-color: #D00606;
+}
+
+.sidebar_card.login{
+    margin-top: 30px;
+}
+.sidebar_card.login .sidebar_card_heading h3{
+    color: #223137;
+}
+.login .login_form{
+    margin-top: 40px;
+}
+.login_form input.place_icon{
+    margin-bottom: 15px;
+    border: none;
+    background-color: #FFCB00;
+    border-radius: 0;
+    padding: 20px 15px;
+}
+.login_form input.place_icon::placeholder{
+    font-family: FontAwesome;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #223137;
+}
+.login_form .options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.login_form .options a{
+    color: #000000;
+    font-size: 16px;
+}
+.login_form .options .checkbox input, .login_form .options .checkbox input{
+    color: #223137;
+    font-size: 16px;
+}
+.login_form .login_btn{
+    width: 100%;
+    background-color: #FFCB00;
+    padding: 10px 0;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #223137;
+}
+/* sidebar section code end here */
+
+/* ============== Main section code end here ============= */
+
+/* ============== Footer code strat here ============= */
+.footer{
+    background-image: url(../images/footer_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+.footer_one img{
+    margin-bottom: 20px;
+}
+.footer_one p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer_one ul li{
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
+}
+.footer_one ul li:last-child{
+    margin-right: 0;
+}
+.footer_one ul li a{
+    border: 1px solid #223137;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    color: #223137;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.footer_one ul li a:hover{
+    background: #223137;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.footer h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer .footer_list li{
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+.footer .footer_list li i{
+    margin-right: 10px;
+    font-size: 12px;
+}
+.footer .footer_list li a{
+    color: #223137;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.footer .footer_list li a:hover{
+    color: #FFCB00;
+    transition: 0.5s;
+}
+.footer .footer_four ul li{
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+.footer .footer_four ul li i{
+    font-size: 14px;
+    color: #223137;
+}
+.footer .footer_four ul li a{
+    margin-left: 10px;
+    color: #223137;
+    font-size: 14px;
+}
+/* ============== Footer code end here ============= */
